@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #181a21 0%, #23262e 100%);
+    color: #e0e6f0;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+    color: #00ffe7;
+    text-shadow: 0 0 10px #00ffe7, 0 0 40px #00ffe733;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#scrapeBtn {
+    background: linear-gradient(90deg, #00ffe7 0%, #007cf0 100%);
+    color: #181a21;
+    border: none;
+    padding: 12px 28px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px #00ffe733;
+    margin-bottom: 30px;
+    transition: background 0.3s, transform 0.2s;
+}
+#scrapeBtn:hover {
+    background: linear-gradient(90deg, #007cf0 0%, #00ffe7 100%);
+    transform: scale(1.05);
+}
+
+#juegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+}
+
+.juego {
+    background: linear-gradient(135deg, #23262e 60%, #1a1d23 100%);
+    border-radius: 16px;
+    padding: 18px 16px 16px 16px;
+    width: 260px;
+    box-shadow: 0 4px 32px #00ffe71a, 0 1.5px 0 #00ffe7;
+    border: 1.5px solid #00ffe733;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s, border 0.3s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.juego:hover {
+    box-shadow: 0 8px 48px #00ffe7cc, 0 2px 0 #00ffe7;
+    border: 2px solid #00ffe7;
+    transform: translateY(-4px) scale(1.03);
+}
+.juego img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 16px #00ffe733;
+}
+.juego .titulo {
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #00ffe7;
+    font-size: 1.1rem;
+    text-align: center;
+    text-shadow: 0 0 8px #00ffe733;
+}
+.juego .descuento {
+    color: #00ffe7;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 8px 0 6px 0;
+    text-shadow: 0 0 8px #00ffe7cc;
+}
+.juego s {
+    color: #ff3c6a;
+    opacity: 0.7;
+}
+.juego b {
+    color: #a4ff00;
+    font-size: 1.1rem;
+    margin-left: 4px;
+}
+.juego a {
+    margin-top: 10px;
+    background: linear-gradient(90deg, #00ffe7 0%, #007cf0 100%);
+    color: #181a21;
+    padding: 7px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 1px 8px #00ffe733;
+    transition: background 0.3s, color 0.2s;
+    display: inline-block;
+}
+.juego a:hover {
+    background: linear-gradient(90deg, #007cf0 0%, #00ffe7 100%);
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #23262e;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #00ffe7 0%, #007cf0 100%);
+    border-radius: 8px;
+}
